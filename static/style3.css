@@ -1,0 +1,93 @@
+
+/* Add font-face rules if necessary */
+
+/* Styles for the zone */
+.zone {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 50%;
+    background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+    width: 40%;
+    height: 50%;
+    border: 5px dashed white;
+    text-align: center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for the upload form */
+.upload {
+    margin-top: 20px;
+}
+
+/* Styles for the file input label */
+.upload label {
+    cursor: pointer;
+    background: #eb6a5a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styles for the file input */
+.upload input[type="file"] {
+    display: none;
+}
+
+/* Styles for the zone-image */
+.zone-image {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    text-align: center;
+
+    background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+    width: 40%;
+    height: 50%;
+    border: 5px dashed white;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+
+}
+
+/* Styles for the image preview */
+.image-preview {
+    margin-top: 20px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border: 5px solid white;
+}
+
+/* Styles for the classify button */
+.classify-button {
+    margin-top: 20px;
+}
+
+.classify-button button {
+    background: #d39e2b;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Additional styles for the result section */
+.result {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjustments for other elements */
+/* Add styles for other elements if necessary */

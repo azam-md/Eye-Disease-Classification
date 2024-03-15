@@ -1,0 +1,313 @@
+
+/* Styles for the main heading */
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Styles for the form */
+form {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+/* Styles for the file input */
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for displaying error messages */
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* Additional adjustments based on the provided HTML */
+/* You can add more styles as needed */
+
+
+
+
+
+
+<!--
+
+
+/* Add font-face rules if necessary */
+
+/* Styles for the zone */
+.zone {
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 40%;
+    background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+    width: 40%;
+    height: 50%;
+    border: 5px dashed white;
+    text-align: center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for the file input */
+.zone input[type="file"] {
+    display: none;
+}
+
+/* Styles for the label (Choose File button) */
+.zone label {
+    cursor: pointer;
+    background: #eb6a5a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styles for the submit button */
+.zone button {
+    background: #d39e2b;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Additional styles for the result section */
+.result {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjustments for other elements */
+/* Add styles for other elements if necessary */
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+
+
+/* Add font-face rules if necessary */
+/* Styles for the zone */
+.zone {
+    margin: auto;
+    position: absolute;
+    top: 10%; /* Adjust as needed */
+    left: 0;
+    bottom: 0;
+    right: 40%;
+    background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+    width: 40%;
+    height: 30%;
+    border: 5px dashed white;
+    text-align: center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Styles for the label (Choose File button) */
+.zone label {
+    cursor: pointer;
+    background: #eb6a5a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styles for the file input */
+.zone input[type="file"] {
+    display: none;
+}
+
+
+/* Styles for the image preview */
+#image-preview {
+    margin-top: 20px;
+    display: none;
+}
+
+#image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid red;
+}
+
+/* Styles for the Classify button */
+#classify-btn {
+    background: #d39e2b;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Additional styles for the result section */
+.result {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adjustments for other elements */
+/* Add styles for other elements if necessary */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styles for Zone 1 */
+.zone-1 {
+    background: radial-gradient(ellipse at center, #eb6a5a 0, #c9402f 100%);
+    width: 45%;
+    height: 100%;
+    border: 5px dashed white;
+    text-align: center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+/* Styles for Zone 2 */
+.zone-2 {
+    width: calc(50%-22.5%);
+margin-left:auto;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border: 5px dashed white;
+    color: black;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
