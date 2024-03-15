@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <div class="zone">
+        <h1 id="title">Eye Disease Classification</h1>
+        <div class="upload">
+            <form action="/classify" method="post" enctype="multipart/form-data">
+                <label for="image">Choose File</label>
+                <input type="file" name="image" id="image">
+            </form>
+        </div>
+    </div>
+    <div class="zone-image">
+        <div class="image-preview">
+            <img id="imgPreview" src="#" alt="Image Preview">
+        </div>
+
+        <div class="classify-button">
+            <button type="submit">Classify</button>
+        </div>
+
+    </div>
+    <div class="result">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <h1>Eye Disease Classification</h1>
+    <form action="/classify" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Classify">
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <div class="zone">
+        <h1 id="title">Eye Disease Classification</h1>
+        <div class="zone-image">
+            <form action="/classify" method="post" enctype="multipart/form-data">
+                <label for="image">Choose File</label>
+                <input type="file" name="image" id="image">
+                <button type="submit">Classify</button>
+            </form>
+        </div>
+    </div>
+    <div class="result">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <h1 id="title">Eye Disease Classification</h1>
+    <div class="zone">
+        <div class="zone-image">
+            <form action="/classify" method="post" enctype="multipart/form-data">
+                <label for="image">Choose File</label>
+                <input type="file" name="image" id="image">
+            </form>
+            <div id="image-preview">
+                <img src="#" alt="Image Preview">
+            </div>
+            <button id="classify-btn">Classify</button>
+        </div>
+    </div>
+    <div class="result">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+
+    <!-- JavaScript to preview selected image -->
+    <script>
+        document.getElementById('image').addEventListener('change', function(event) {
+            var imagePreview = document.getElementById('image-preview');
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.querySelector('img').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <h1 id="title">Eye Disease Classification</h1>
+    <div class="container">
+        <div class="zone zone-1">
+            <div class="zone-image">
+                <form action="/classify" method="post" enctype="multipart/form-data">
+                    <label for="image">Choose File</label>
+                    <input type="file" name="image" id="image">
+                </form>
+            </div>
+        </div>
+        <div class="zone zone-2">
+            <div id="image-preview-2">
+                <img src="#" alt="Image Preview">
+            </div>
+            <button id="classify-btn">Classify</button>
+        </div>
+    </div>
+    <div class="result">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+
+    <!-- JavaScript to preview selected image -->
+    <script>
+        document.getElementById('image').addEventListener('change', function(event) {
+            var imagePreview = document.getElementById('image-preview');
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                imagePreview.querySelector('img').src = e.target.result;
+                imagePreview.style.display = 'block'; // Show image preview
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
