@@ -1,0 +1,75 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Eye Disease Prediction</h1>
+        <input type="file" id="fileInput">
+        <button onclick="uploadImage()">Submit</button>
+        <div id="prediction"></div>
+        <img id="uploadedImage" style="display:none;">
+    </div>
+    
+    <script>
+        function uploadImage() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+            var formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/predict', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('prediction').innerText = "Predicted Class: " + data.predicted_class;
+                document.getElementById('uploadedImage').src = URL.createObjectURL(file);
+                document.getElementById('uploadedImage').style.display = 'block';
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Classification</title>
+    <link rel="stylesheet" type="text/css" href="/static/style2.css">
+</head>
+<body>
+    <div class="zone">
+        <h1 id="title">Eye Disease Classification</h1>
+        <div class="zone-image">
+            <form action="/classify" method="post" enctype="multipart/form-data">
+                <label for="image">Choose File</label>
+                <input type="file" name="image" id="image">
+                <button type="submit">Classify</button>
+            </form>
+        </div>
+    </div>
+    <div class="result">
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
