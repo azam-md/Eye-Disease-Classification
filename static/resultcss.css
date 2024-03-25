@@ -1,0 +1,48 @@
+/* resultcss.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Disease information styles */
+.disease-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Precautions box styles */
+.precautions {
+    background-color: #ffcccc;
+}
+
+/* Solutions box styles */
+.solutions {
+    background-color: #ccffcc;
+}
+
+/* Reasons box styles */
+.reasons {
+    background-color: #ccccff;
+}
+
+/* Disease image styles */
+.disease-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
