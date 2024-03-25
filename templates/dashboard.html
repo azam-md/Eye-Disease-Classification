@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM 21</title>
+    <!-- Main Template CSS File -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Render All Elements Normally -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <!-- Font Awesome Library -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- nav header -->
+    <div class="header" id="header">
+        <div class="container">
+            <span class="logo">
+	<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+
+                <span><span class="blueLetter">V</span>isionary<span class="blueLetter">C</span>are
+                </span>
+            </span>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#diseases">More</a></li>
+                    <li><a href="#checkNow">Scan Now</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- intro part -->
+    <div class="home" id="home">
+        <div class="space"></div>
+
+        <img src="{{ url_for('static', filename='images/background-home.jpg') }}" alt="BG_Home"  class="background">
+        <div class="container">
+            <div class="text">
+                <h1>Eye Diseases <br><span><b>Class</span>ification</b></h1>
+                <br>
+                Do you experience vision problems? <br>
+                WHO estimates that at least 2.2 billion people have near or distant vision impairment. Check now with
+                just one click!<br><br>
+                <a href="#checkNow"><button class="scan-home-button">Scan Now </button></a>
+                <a href="https://github.com/azam-md/Eye-Disease-Classification.git"
+                    target="_blank"><button>Research </button></a>
+            </div>
+        <img src="{{ url_for('static', filename='/images/cataracts-compared-to-normal-eye.jpg') }}" >
+        </div>
+    </div>
+
+    <!-- more details part -->
+    <div class="diseases" id="diseases">
+        <div class="space"></div>
+        <div class="container">
+            <div class="text">
+                <span>Empowering Futures <b>through <span>Innov</span>ative</b> Eye Health Solutions</span>
+                <br> <br>
+                <p>World Health Organization estimates that at least 2.2 billion people have near or distant vision
+                    impairment. 1 billion of those cases could have been prevented or still have to be addressed.
+                    The leading causes of blindness or distance vision impairment among those mentioned 1 billion are
+                    cataracts (94 million), refractive error (88.4 million), age-related macular degeneration (8
+                    million), glaucoma (7.7 million) and diabetic retinopathy (3.9 million).
+                    Among the above eye conditions, our model detect cataracts, glaucoma, and diabetic retinopathy.</p>
+
+                <div class="eyeDisease cataract">
+                    <b>Cataract</b> is an eye disease causing the eyes to be cloudy, vision to be frosty or fogged-up
+                    and the
+                    person suffering from it to face difficulties reading, driving, and even recognizing another
+                    person’s face. It is caused by proteins that build up on the lens of the eyes preventing light from
+                    passing through it.
+                    Cataracts account for more than 51 percent of blindness throughout the world.
+                </div>
+                <div class="eyeDisease glaucoma">
+                    <b>Glaucoma</b> is caused by fluid building up in the front part of the eyes that increases the
+                    pressure
+                    inside the eye causing the optic nerve that connects the eye to the brain to be damaged.
+                    According to the Centers for Disease Control and Prevention (CDC), it is the second leading cause of
+                    blindness worldwide, 50% of people with glaucoma don’t know they have it as there are usually no
+                    early symptoms.
+                    It must be detected and diagnosed early to stop the vision from getting worse and causing vision
+                    loss as it is impossible to reverse any damages that happened before the diagnosis.
+                </div>
+                <div class="eyeDisease retinopathy">
+                    <b>Diabetic retinopathy</b> is a common complication of diabetes where high blood sugar levels cause
+                    damage
+                    to the blood vessels of the retina. Globally, 27% of diabetic patients have it
+                    It can’t usually be noticed in the early stages due to the lack of obvious symptoms until it’s more
+                    advanced however it can be picked up during diabetic eye screening.
+
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="diseases-images">
+            <div>
+                <h2>Normal</h2>
+        <img src="{{ url_for('static', filename='images/norma1.jpg') }}" >
+        <img src="{{ url_for('static', filename='images/normal2.jpg') }}" >
+            </div>
+            <div class="cataract">
+                <h2>Cataract</h2>
+        <img src="{{ url_for('static', filename='images/cataract1.jpg') }}" >
+        <img src="{{ url_for('static', filename='images/cataract2.jpg') }}" >
+            </div>
+            <div>
+                <h2>Glaucoma</h2>
+        <img src="{{ url_for('static', filename='images/glaucoma1.jpg') }}" >
+        <img src="{{ url_for('static', filename='images/glaucoma2.jpg') }}" >
+            </div>
+            <div>
+                <h2>Diabetic retinopathy</h2>
+        <img src="{{ url_for('static', filename='images/diabetic1.jpg') }}" >
+        <img src="{{ url_for('static', filename='images/diabetic2.jpg') }}" >
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+
+    <div class="features-section" id="features">
+        <div class="container">
+            <div class="text">
+                <p>
+                    OUR SOLUTION<br> <br>
+                    <span>Pocket-sized <b><span>pre-scr</span>eening tool</b>, limitless impact</span> <br><br>
+                    By combining image processing technology and artificial intelligence, our pre-screening tool can
+                    detect even the smallest abnormalities in the eyes. <br>
+                    A safe and cost effective pre-screening tool with no need for specialists.
+                </p>
+            </div>
+            <div class="features-box">
+                <div class="left-features">
+                    <div class="feature">
+                        <p>
+                            <span>Fast & frictionless</span>
+                            Screening and analysis in a few moments
+                        </p>
+        <img src="{{ url_for('static', filename='images/icons8-clock-50.png') }}"  width="50px" height="50px">
+                    </div>
+                    <div class="feature">
+                        <p><span>No specialists needed</span>
+                            Easy for all healthcare personell to use
+                        </p>
+        <img src="{{ url_for('static', filename='images/icons8-hospital-insurance-48.png') }}"  width="50px" height="50px">
+                    </div>
+                    <div class="feature">
+                        <p><span>Scalable solution</span>
+                            The bigger the data set, the smarter our AI solution becomes
+                        </p>
+        <img src="{{ url_for('static', filename='images/image4.png') }}"  width="50px" height="50px">
+                    </div>
+                </div>
+                <div class="center-img">
+        <img src="{{ url_for('static', filename='images/Wavy_Tech-09_Single-01-removebg-preview2.png') }}"  >
+                </div>
+                <div class="right-features">
+                    <div class="feature">
+        <img src="{{ url_for('static', filename='images/icons8-ai-64-3.png') }}"  width="50px" height="50px">
+                        <p><span>Artificial Intelligence</span>
+                            Our own made AI performs the image analysis and provides a risk assessment
+                        </p>
+                    </div>
+                    <div class="feature">
+        <img src="{{ url_for('static', filename='images/image2.png') }}"  width="50px" height="50px">
+                        <p><span>Easy to Integrate</span>
+                            Submit an image of your eye and see the results
+                        </p>
+                    </div>
+                    <div class="feature">
+        <img src="{{ url_for('static', filename='images/icons8-increase-64.png') }}"  width="50px" height="50px">
+                        <p><span>High Accuracy</span>
+                            Model accuarcy is 91.46% and 96.68% for Catarct Model
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+
+  
+<!-- Ai part -->
+    <div class="checkNow" id="checkNow">
+        <div class="space"></div>
+        <div class="checkcontainer">
+            <div class="right">
+                <p class="main-heading">Scan Now</p>
+                <br> <br>
+	<div class="scanDiv">
+                    <div class="scanButtons">
+	        <form action="/scan" method="post" enctype="multipart/form-data">
+                        <label for="imageInput">Scan Images</label>
+                       
+                <button class="scan-home-button">Scan Now </button>
+	         </form>
+                    </div>
+                </div>
+             </div>
+                   
+            <div class="upload">
+                <div class="circle">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="cloud-arrow-up" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                        class="svg-inline--fa fa-cloud-arrow-up fa-fw fa-2x">
+                        <path fill="currentColor"
+                            d="M354.9 121.7c13.8 16 36.5 21.1 55.9 12.5c8.9-3.9 18.7-6.2 29.2-6.2c39.8 0 72 32.2 72 72c0 4-.3 7.9-.9 11.7c-3.5 21.6 8.1 42.9 28.1 51.7C570.4 276.9 592 308 592 344c0 46.8-36.6 85.2-82.8 87.8c-.6 0-1.3 .1-1.9 .2H504 144c-53 0-96-43-96-96c0-41.7 26.6-77.3 64-90.5c19.2-6.8 32-24.9 32-45.3l0-.2v0 0c0-66.3 53.7-120 120-120c36.3 0 68.8 16.1 90.9 41.7zM512 480v-.2c71.4-4.1 128-63.3 128-135.8c0-55.7-33.5-103.7-81.5-124.7c1-6.3 1.5-12.8 1.5-19.3c0-66.3-53.7-120-120-120c-17.4 0-33.8 3.7-48.7 10.3C360.4 54.6 314.9 32 264 32C171.2 32 96 107.2 96 200l0 .2C40.1 220 0 273.3 0 336c0 79.5 64.5 144 144 144H464h40 8zM223 255c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39V384c0 13.3 10.7 24 24 24s24-10.7 24-24V249.9l39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"
+                            class=""></path>
+                    </svg>
+                </div>
+                <p class="upload-text"> Upload your eye image for free scan right now!
+                    <br><br> The model results accuracy is 91.46% and 96.68% for Cataract Model.
+                </p>
+            </div>
+        </div>
+        <div class="space"></div>
+    </div>
+    <div class="space"></div>
+
+
+    <!-- contact part and footer -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h1 class="main-heading">Contributors</h1>
+            <div class="text">
+                This project is made by the team 21<br> under supervision of <br> Dr. Mohammed Ali Shaik  <br> as a part of the Major Project at <br> SR University
+            </div>
+            <div class="box">
+                <ul>
+                    <li class="front"><img src="{{ url_for('static', filename='images/azam.jpg') }}"  class="backimg"></li>
+                    <li class="back"><img src="{{ url_for('static', filename='images/azam.png') }}"  class="backimg"><span>Mohammad Azam</span>
+	    <a class="github" href="https://github.com/azam-md" target="_blank">
+       	   <img src="{{ url_for('static', filename='images/github-64.png') }}" class="">
+	     </a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/mohammad-azam--/"
+                            target="_blank"> <img src="{{ url_for('static', filename='images/linkedin.png') }}"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="front"><img src="./images/ali.png"></li>
+                    <li class="back"><img src="./images/ali.png" class="backimg"><span>Mohammed Ali Shaik</span><a
+                            class="github" href="" target="_blank"><img
+                                src="./images/github-64.png" class=""></a>
+                        <a class="linkedin" href=""
+                            target="_blank"><img src="./images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="front"><img src="./images/abhilash.png"></li>
+                    <li class="back"><img src="./images/abhilash.png" class="backimg"><span>Kamuni Abhilash</span><a
+                            class="github" href=" target="_blank"><img
+                                src="./images/github-64.png" alt=""></a>
+                        <a class="linkedin" href=""
+                            target="_blank"><img src="./images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="front"><img src="./images/sindhu.png"></li>
+                    <li class="back"><img src="./images/sindhu.png" class="backimg"><span>Sindhu THota</span><a
+                            class="github" href="" target="_blank"><img
+                                src="./images/github-64.png" alt=""></a>
+                        <a class="linkedin" href=""
+                            target="_blank"><img src="./images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="front"><img src="./images/Sai Ananya.png"></li>
+                    <li class="back"><img src="./images/Sai Ananya.png" class="backimg"><span>Sai Ananya</span><a
+                            class="github" href="" target="_blank"><img
+                                src="./images/github-64.png" alt=""></a>
+                        <a class="linkedin" href=""
+                            target="_blank"><img src="./images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="front"><img src="./images/ganesh.jpg"></li>
+                    <li class="back"><img src="./images/ganesh.jpg" class="backimg"><span>Ganesh Anishetty</span><a
+                            class="github" href="" target="_blank"><img
+                                src="./images/github-64.png" alt=""></a>
+                        <a class="linkedin" href=""
+                            target="_blank"><img src="./images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
+               
+               
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="footer">
+            <p><a href="mailto:mohdazam1823@gmail.com"> mohdazam1823@gmail.com</a> <br>Warangal, India, SR 
+                University <br><br> All Rights Reserved, Copyright 2024</p>
+        </div>
+    </div>
+   
+</body>
+
+</html>
